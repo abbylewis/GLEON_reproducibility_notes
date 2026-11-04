@@ -20,7 +20,7 @@ prevalence_by_term <- lyrics_long %>%
     n_with_term = length(unique(song_id[present])),
     prevalence = n_with_term / n_songs,
     .groups = "drop"
-  ) 
+  )
 
 #### Plot ####
 prevalence_by_term %>%
